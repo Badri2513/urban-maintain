@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Maintenance Notifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Urban Maintenance Notifier</h1>
+        <button id="contactUs" class="contact-button">Contact Us</button>
+    </header>
+    
+    <main>
+        <h2>Report an Issue</h2>
+        <form id="reportForm">
+            <label for="issueCategory">Select Issue Category:</label>
+            <select id="issueCategory" required>
+                <option value="">Select...</option>
+                <option value="road_damage">Road Damage</option>
+                <option value="streetlight_problems">Streetlight Problems</option>
+                <option value="water_leakage">Water Leakage</option>
+                <option value="waste_management">Waste Management</option>
+            </select>
+
+            <label for="address">Location (Address or Landmark):</label>
+            <input type="text" id="address" placeholder="Enter address or landmark" required>
+
+            <label for="photoUpload">Upload Geotagged Picture:</label>
+            <input type="file" id="photoUpload" accept="image/*" required>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
